@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naresh Gusain - Projects Case Studies">
+    <title>Projects | Naresh Gusain</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Specific Styles for Case Study Layout */
+        .case-study {
+            background-color: var(--surface-color);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 50px;
+            border: 1px solid var(--border-color);
+            text-align: left; /* Fix alignment */
+        }
+        
+        .case-study p, .case-study li {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+        
+        .case-study h2 {
+            font-size: 2rem;
+            color: var(--primary-accent);
+            margin-bottom: 10px;
+        }
+
+        .cs-subtitle {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .cs-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media(min-width: 900px) {
+            .cs-grid {
+                grid-template-columns: 1.5fr 1fr;
+            }
+        }
+
+        .cs-content h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .cs-description {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        .cs-sidebar {
+            background-color: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            padding: 25px;
+            height: fit-content;
+        }
+
+        .tech-pill {
+            display: inline-block;
+            background: rgba(108, 92, 231, 0.15);
+            color: #a29bfe;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 4px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .architecture-flow {
+            background: #000;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #00cec9;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">{ N }</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section" style="padding-top: 120px;">
+            <div class="container">
+                <h2 class="section-title">Selected Case Studies</h2>
+                
+                <!-- Project 1: Flight Booking System -->
+                <article class="case-study fade-up">
+                    <h2>Flight Booking System</h2>
+                    <span class="cs-subtitle">Microservices Architecture • High Availability</span>
+                    
+                    <div class="cs-grid">
+                        <div class="cs-content">
+                            <h3>The Problem</h3>
+                            <p class="cs-description">
+                                Building a scalable flight booking platform capable of handling concurrent bookings, real-time seat availability, secure payments, and seamless check-in workflows.
+                            </p>
+
+                            <h3>The Solution</h3>
+                            <p class="cs-description">
+                                Designed and implemented a microservices-based architecture with service separation, API Gateway routing, service discovery, and comprehensive security. The system generates PDF boarding passes with QR codes and sends automated email confirmations.
+                            </p>
+
+                            
+                            <h3>Key Features</h3>
+                            <ul class="exp-details">
+                                <li><strong>JWT Security:</strong> Token-based authentication with role-based authorization.</li>
+                                <li><strong>Centralized Routing:</strong> API Gateway for load balancing.</li>
+                                <li><strong>Payment Integration:</strong> Secure processing workflow.</li>
+                                <li><strong>Automated Boarding Pass:</strong> PDF generation with QR codes + Email.</li>
+                            </ul>
+                        </div>
+
+                        <div class="cs-sidebar">
+                            <h3>Tech Stack</h3>
+                            <div style="margin-top: 15px;">
+                                <span class="tech-pill">Spring Boot</span>
+                                <span class="tech-pill">Spring Security</span>
+                                <span class="tech-pill">JWT</span>
+                                <span class="tech-pill">API Gateway</span>
+                                <span class="tech-pill">Eureka</span>
+                                <span class="tech-pill">MySQL</span>
+                                <span class="tech-pill">JPA/Hibernate</span>
+                                <span class="tech-pill">Angular</span>
+                            </div>
+                            <h3 style="margin-top: 25px;">Links</h3>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Reddit AI Agent -->
+                <article class="case-study fade-up">
+                    <h2>Reddit AI Agent</h2>
+                    <span class="cs-subtitle">AI Automation • Data Analysis • LLM Integration</span>
+                    
+                    <div class="cs-grid">
+                        <div class="cs-content">
+                            <h3>The Problem</h3>
+                            <p class="cs-description">
+                                Companies and product teams need to understand user pain points on Reddit, but manually analyzing hundreds of posts is time-consuming and prone to missing hidden trends.
+                            </p>
+
+                            <h3>The Solution</h3>
+                            <p class="cs-description">
+                                An AI-powered automation system that acts as an intelligent assistant. Users enter subreddits, and the system fetches top posts, analyzes them using Groq LLM (LLaMA 3.3), identifies recurring problems, and generates comprehensive PDF reports emailed directly to the user.
+                            </p>
+
+                            <h3>Key Features</h3>
+                            <ul class="exp-details">
+                                <li><strong>Reddit API (PRAW):</strong> Automated fetching of top posts.</li>
+                                <li><strong>AI Analysis:</strong> Uses Groq LLM to summarize sentiments and pain points.</li>
+                                <li><strong>Dual PDF Report:</strong> Generates raw data + AI summary reports.</li>
+                                <li><strong>Automation:</strong> Auto-emails reports via SMTP.</li>
+                            </ul>
+                        </div>
+
+                        <div class="cs-sidebar">
+                            <h3>Tech Stack</h3>
+                            <div style="margin-top: 15px;">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">PRAW</span>
+                                <span class="tech-pill">Groq LLM</span>
+                                <span class="tech-pill">LLaMA 3.3</span>
+                                <span class="tech-pill">Streamlit</span>
+                                <span class="tech-pill">ReportLab</span>
+                            </div>
+                            <h3 style="margin-top: 25px;">Links</h3>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: MediWise -->
+                <article class="case-study fade-up">
+                    <h2>MediWise AI Agent</h2>
+                    <span class="cs-subtitle">Healthcare AI • Medical Report Analysis</span>
+                    
+                    <div class="cs-grid">
+                        <div class="cs-content">
+                            <h3>Concept</h3>
+                            <p class="cs-description">
+                                A healthcare assistant AI agent that analyzes uploaded medical reports, extracts key information, and provides intelligent insights. Designed with a focus on data privacy, accuracy, and user-friendly interfaces.
+                            </p>
+
+                            <h3>Key Features</h3>
+                            <ul class="exp-details">
+                                <li><strong>Report Parsing:</strong> Automated extraction of medical data.</li>
+                                <li><strong>Intelligent Insights:</strong> AI-driven health recommendations.</li>
+                                <li><strong>Privacy First:</strong> Secure file upload and storage.</li>
+                                <li><strong>Dashboard:</strong> Angular-based UI for managing history.</li>
+                            </ul>
+                        </div>
+
+                        <div class="cs-sidebar">
+                            <h3>Tech Stack</h3>
+                            <div style="margin-top: 15px;">
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">Spring Boot</span>
+                                <span class="tech-pill">AI/ML</span>
+                                <span class="tech-pill">Angular</span>
+                                <span class="tech-pill">File Processing</span>
+                            </div>
+                            <h3 style="margin-top: 25px;">Links</h3>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        
+        <footer class="footer" style="text-align: center; padding-bottom: 30px;">
+            <p>Designed & Built by Naresh Gusain</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
